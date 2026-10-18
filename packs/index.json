@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2026-10-19",
+    "date": "2026-10-19",
+    "title": "2026 10 19",
+    "wordCount": 10,
+    "data": "packs/news-2026-10-19.json",
+    "youtube_url": ""
+  },
+  {
+    "id": "2026-10-20",
+    "date": "2026-10-20",
+    "title": "2026 10 20",
+    "wordCount": 10,
+    "data": "packs/news-2026-10-20.json",
+    "youtube_url": ""
+  },
+  {
+    "id": "2026-10-21",
+    "date": "2026-10-21",
+    "title": "2026 10 21",
+    "wordCount": 10,
+    "data": "packs/news-2026-10-21.json",
+    "youtube_url": ""
+  },
+  {
+    "id": "2026-10-22",
+    "date": "2026-10-22",
+    "title": "2026 10 22",
+    "wordCount": 10,
+    "data": "packs/news-2026-10-22.json",
+    "youtube_url": ""
+  },
+  {
+    "id": "2026-10-23",
+    "date": "2026-10-23",
+    "title": "2026 10 23",
+    "wordCount": 10,
+    "data": "packs/news-2026-10-23.json",
+    "youtube_url": ""
+  }
+]

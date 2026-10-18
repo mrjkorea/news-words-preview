@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily ESL News · Word Master · MRJ English</title>
+  <meta name="robots" content="noindex" />
+  <script>
+    /*
+     * Thin redirect. News words now open in the one Word Master app, in public mode
+     * (no sign-in, no assignment, nothing saved):
+     *   index.html?date=YYYY-MM-DD  ->  word-master/?packsrc=https://mrjkorea.github.io/news-words-preview/packs/news-YYYY-MM-DD.json
+     *   index.html (no date)         ->  days.html
+     * Other query params and the #hash are kept.
+     */
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var date = params.get("date") || "";
+      var hash = location.hash || "";
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+        location.replace("days.html" + hash);
+        return;
+      }
+      params.delete("date");
+      var src = "https://mrjkorea.github.io/news-words-preview/packs/news-" + date + ".json";
+      var rest = params.toString();
+      var target = "https://mrjkorea.github.io/word-master-preview/?packsrc=" + encodeURIComponent(src) + (rest ? "&" + rest : "") + hash;
+      location.replace(target);
+    })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url=days.html" /></noscript>
+</head>
+<body>
+  <p><a href="days.html">News Words · all days</a></p>
+</body>
+</html>
